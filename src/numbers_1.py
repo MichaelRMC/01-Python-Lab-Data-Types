@@ -7,6 +7,10 @@
 
 # Write the answers in comments below each expression and print the results.
 
+print(263)
+print(8010)
+print()
+
 # Task 2: Type Identification
 # ---------------------------
 # Identify the data type of the following expressions:
@@ -17,6 +21,11 @@
 
 # Use the `type()` function to verify the data types and print them.
 
+print('float')
+print('int')
+print('int')
+print('float')
+
 # Task 3: Arithmetic Error Handling
 # ---------------------------------
 # Write a Python function that attempts to divide two numbers and catches any potential errors (e.g., division by zero).
@@ -24,7 +33,10 @@
 
 def safe_divide(a, b):
     # Your code here
-    pass
+    if (a or b == 0):
+        return "Division By Zero"
+    else:
+        return a // b
 
 # Task 4: Advanced Arithmetic
 # ---------------------------
@@ -39,4 +51,3 @@ def factorial(n):
 def sum_of_digits(n):
     # Your code here
     pass
-

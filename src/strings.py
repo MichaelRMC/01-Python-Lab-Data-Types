@@ -8,6 +8,10 @@
 # 4. Reverse the string "Python".
 
 # Print the results of each operation.
+print("Python" + " is" + " awesome")
+print("Code"*7)
+print("Octopocalypse"[2:5])
+print()
 
 # Task 2: Advanced String Operations
 # ----------------------------------
@@ -17,7 +21,8 @@
 
 def count_vowels(s):
     # Your code here
-    pass
+    vowels = "a, e, i, o, u"
+    return s.count(vowels)
 
 def replace_char(s, old, new):
     # Your code here
@@ -30,7 +35,7 @@ def replace_char(s, old, new):
 
 def format_name(first_name="Unknown", last_name="Unknown"):
     # Your code here
-    pass
+   return '{0}, {1}'.format(last_name, first_name)
 
 # Task 4: String Validation
 # -------------------------

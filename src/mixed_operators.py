@@ -18,7 +18,10 @@
 
 def combine_and_convert(num, num_str):
     # Your code here
-    pass
+    convert_num_str = int(num_str)
+    sum = num+convert_num_str
+    sum_str = str(sum)
+    return sum_str + num_str
 
 # Task 3: Mixed Type Handling
 # ---------------------------
@@ -35,5 +38,9 @@ def mixed_operations(num, flag):
 # Write a Python function that compares the data types of two inputs and returns True if they are the same, and False otherwise.
 
 def compare_types(a, b):
-    # Your code here
-    pass
+    a_type = type(a)
+    b_type = type(b)
+    if a_type != b_type:
+        return False
+    else:
+        return True
